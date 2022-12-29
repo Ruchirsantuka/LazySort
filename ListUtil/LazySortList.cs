@@ -119,7 +119,7 @@ public class LazySortList<T> : IList<T> where T : IComparable<T>
         return ((IEnumerable)list).GetEnumerator();
     }
 
-    public void Update()
+    private void Update()
     {
         if (!isModified)
         {
